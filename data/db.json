@@ -1,0 +1,10 @@
+{
+  "blogs" : [
+    {
+      "title": "First blog ever", "data" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla augue, sagittis laoreet sollicitudin non, interdum sodales mauris. Curabitur neque dolor, iaculis pulvinar hendrerit vitae, lobortis vel odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Proin ac tellus vitae.", "author": "emre", "id":  1
+    },
+    {
+      "title": "Second blog in this site", "data" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla augue, sagittis laoreet sollicitudin non, interdum sodales mauris. Curabitur neque dolor, iaculis pulvinar hendrerit vitae, lobortis vel odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Proin ac tellus vitae.", "author": "mario", "id": 2
+    }
+  ]
+}
