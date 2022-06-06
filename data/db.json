@@ -1,10 +1,10 @@
 {
   "blogs" : [
     {
-      "title": "First blog ever", "data" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla augue, sagittis laoreet sollicitudin non, interdum sodales mauris. Curabitur neque dolor, iaculis pulvinar hendrerit vitae, lobortis vel odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Proin ac tellus vitae.", "author": "emre", "id":  1
+      "title": "First blog ever", "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque nibh pellentesque odio feugiat, consequat facilisis elit convallis. In feugiat rhoncus urna nec tincidunt. Quisque facilisis lobortis justo vitae pulvinar. Suspendisse a libero cursus, aliquam neque ut, porttitor orci. Nulla fermentum orci commodo purus tincidunt facilisis. Etiam id erat nec velit pharetra accumsan. Praesent eget sagittis massa. Nam finibus enim ut interdum posuere. Sed posuere hendrerit ex vitae auctor. Sed tempus dictum eros. Pellentesque fringilla fermentum magna at tempus. Cras eros nisl, porta sed justo et, rutrum hendrerit justo. Nam tempus gravida feugiat.", "author": "emre", "likes": 50, "filters": "funny", "channel": "Funny", "id":  1
     },
     {
-      "title": "Second blog in this site", "data" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla augue, sagittis laoreet sollicitudin non, interdum sodales mauris. Curabitur neque dolor, iaculis pulvinar hendrerit vitae, lobortis vel odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam erat volutpat. Proin ac tellus vitae.", "author": "mario", "id": 2
+      "title": "Second blog in this site", "body" : "Suspendisse elementum ipsum felis, ut tristique sapien sagittis vitae. Ut enim justo, volutpat et justo ut, vestibulum congue erat. Etiam elementum quis diam ut finibus. Vestibulum euismod lobortis libero, sit amet congue nibh tincidunt vel. Ut id nunc eros. Pellentesque diam libero, pulvinar ac dui vel, maximus varius odio. Donec dictum augue id magna efficitur sodales. Sed euismod, tellus sit amet tempus faucibus, justo erat maximus magna, non pharetra libero diam nec nisi. Donec auctor mattis neque, a gravida arcu accumsan eu. Nulla imperdiet, justo in egestas lobortis, dolor arcu sodales nulla, sed tempus dui erat et elit. Donec urna risus, commodo vel metus vel, consectetur tincidunt diam. Integer congue ut quam non ornare.", "author": "mario", "likes": 150, "filters": "science", "channel": "Funny", "id": 2
     }
   ]
 }

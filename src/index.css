@@ -6,58 +6,165 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+body{
+  background: #110d11;
+}
 .navbar{
+  background: #FFF;
   padding: 1vw;
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  max-width: 65%;
-  border-bottom: 2px solid #eaeaea;
+  justify-content: space-around;
 }
 .navbar h1{
-  color: #ff437c
-}
-.links{
-  margin-left: 2vw;
+  color: #DF367C
 }
 .links a{
   text-decoration: none;
-  color: #f05181;
-  padding: 1vw;
+  color: #F999CB;
+  padding: 0.65vw;
+}
+.new-blog{
+  background: #DF367C;
+  color: #FFF !important;
+  margin: 0 1vw;
+  border-radius: 16px;
 }
 .links a:hover{
-  color: #ff94b4;
+  color: #B6A1B3;
+}
+.home{
+  display: flex;
+  justify-content: center;
 }
 .content{
-  max-width: 65%;
+  max-width: 75%;
   margin: 2vw auto;
   padding: 1vw;
 }
+.blog-list h1{
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
 .blog-preview{
+  margin: 1vw auto;
+  background: #252020;
+}
+.upper-infos{
+  background-color: #282222;
+  display: flex;
+  color: #F999CB;
+  font-size: 0.65rem;
+  padding: 1vw;
+}
+.upper-infos p{
+  margin-right: 0.4vw;
+}
+.upper-infos span:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.blog-channel:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bottom-infos{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282222;
+}
+.bottom-infos i{
+  color: #F999CB;
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+}
+.bottom-infos i p{
+  font-size: 0.75rem;
+  padding: 0.3vw;
+}
+.banners{
+  display: flex;
+  font-size: 0.7rem;
+  padding: 1vw;
+  color: #DF367C;
+}
+.banners p{
+  background-color: #FFF;
+  padding: 0.4vw;
+  border-radius: 10px;
+  margin-right: 0.75vw;
+}
+.banners p span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.bottom-infos button{
+  background-color: #282222;
+  border: none;
+  padding: 0.5vw;
+  margin: 0.5vw;
+}
+.bottom-infos button:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.blog-preview a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 3vw;
+  color: #DF367C;
+  font-size: 1.5rem;
+}
+.blog{
   padding: 1vw;
   margin: 1vw 0;
   border-bottom: 1px solid #eee;
-  max-width: 65%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
-.blog-preview:hover{
-  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+.blog:hover{
+  box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.1);
 }
-.blog-preview h2{
-  font-size: 1.5rem;
-  color: #ff437c;
+.blog-title{
+  font-size: 2rem;
+  color: #DF367C;
   padding-bottom: 1vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
-.blog-preview p{
+.blog-author{
   font-size: 0.65rem;
-  color: #ff94b4;
+  color: #F999CB;
+  margin: 0 auto 0 75%; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
-loader-wrapper {
+.blog-body{
+  letter-spacing: 0.05rem;
+  margin: 20px 0;
+  color : #FFF;
+}
+
+/* Loading Screen CSS */
+.loader-wrapper {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #0b0b0b;
+  background-color: rgba(0, 0, 0, 0.5);
   display: grid;
   place-items: center;
 }
@@ -80,4 +187,16 @@ loader-wrapper {
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
