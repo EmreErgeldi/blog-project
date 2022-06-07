@@ -151,7 +151,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 80%;
-  padding: 4vw;
+  padding: 3vw;
   align-items: center;
 }
 .input-title{
@@ -159,7 +159,7 @@ body{
   padding: 1vw;
   background-color: #282222;
   border: none;
-  border-radius: 16px;
+  border-radius: 10px;
   margin: 1vw;
   color: #DF367C;
   width: 75%;
@@ -172,6 +172,7 @@ body{
   margin: 1vw;
   color: #DF367C;
   width: 75%;
+  height: 12vw;
 }
 .input-author{
   background-color: #282222;
@@ -185,17 +186,19 @@ body{
 .submit-form{
   background-color: #282222;
   border: none;
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 1vw;
-  margin: 1vw;
+  margin: 1vw 1vw 1vw 50%;
   color: #DF367C;
-  width: 35%;
+  width: 25%;
   cursor: pointer;
 }
-.form-bottom{
-  width: 75%;
+.form-upper{
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 75%;
+  border-bottom: 2px solid #252020;
+  outline: none;
 }
 
 /* Loading Screen CSS */

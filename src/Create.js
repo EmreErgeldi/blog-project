@@ -1,7 +1,16 @@
 const Create = () => {
   return ( 
     <div className="create">
+      <div className="form-upper">
+        <select className="input-author">
+          <option value="emre">emre</option>
+          <option value="mario">mario</option>
+          <option value="yoshi">yoshi</option>
+        </select>
+      </div>
       <form className="blog-form">
+        
+        
         <input
         type="text"
         required
@@ -13,15 +22,7 @@ const Create = () => {
           placeholder="Write your blog here..."
           className="input-body"
         ></textarea>
-        <div className="form-bottom">
-          <select className="input-author">
-            <option value="emre">emre</option>
-            <option value="mario">mario</option>
-            <option value="yoshi">yoshi</option>
-          </select>
-          <button className="submit-form">Add Blog</button>
-        </div>
-        
+        <button className="submit-form">Post</button>
       </form>
     </div>
    );
