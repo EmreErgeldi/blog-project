@@ -14,13 +14,12 @@ const BlogList = ({ blogs, title }) => {
             <h2>{ blog.title }</h2>
           </Link>
           <div className="bottom-infos">
-            <div className="banners">
-              <p>has <span>{ blog.likes }</span> likes</p>
-              <p> {blog.filters} </p>
+            <div className="events">
+              <button><i className="fa-solid fa-thumbs-up"><p>{blog.likes}</p></i></button>
+              <button><i className="fa-solid fa-share"><p>Share</p></i></button>
+              <button><i className="fa-solid fa-message"><p>Comments</p></i></button>
             </div>
-            <button><i class="fa-solid fa-thumbs-up"><p>Like</p></i></button>
-            <button><i class="fa-solid fa-share"><p>Share</p></i></button>
-            <button><i class="fa-solid fa-message"><p>Comments</p></i></button>
+            
           </div>
         </div>
       ))}
